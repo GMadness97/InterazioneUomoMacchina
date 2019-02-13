@@ -5,10 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="Stile.css" rel="stylesheet" >
 </head>
-<body>
 
-<footer class="section footer-classic context-dark bg-image pull-down" style="background: #blacK;padding:0;">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<footer class="fixed-bottom context-dark bg-dark">
        
         <div class="row no-gutters social-container">
           <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Chi siamo</span></a></div>
