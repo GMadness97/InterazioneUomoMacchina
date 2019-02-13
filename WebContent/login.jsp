@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" >
-<link href="style.css" rel="stylesheet" >
+<link href="Stile.css" rel="stylesheet" >
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -15,20 +15,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<form action="LoginControl" method="post">
+<form action="LoginControl" method="post" name="login">
 <div class="container login-container"> 
-            <div class="row ">
-                <div class=" col-md-8 login-form-1">
+            <div class="row">
+                <div class="col-md-9 col-md-offset-5 login-form-1">
                     <h3>Login</h3>
                     
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email *" name ="eMail"  />
+                            <input type="email" class="form-control" placeholder="Email *" name ="email"   required oninput ="controlloEmail()">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password *" name ="password" />
+                            <input type="password" class="form-control" placeholder="Password *" name ="password" required oninput ="controlloPassword()" />
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
+                            <input type="submit" class="btnSubmit" name="invio" value="Login" name="login" onclick="validazione()"/>
                         </div>
                     	<div class="form-group">
                        <p class="btnForgetPwd">Non hai un account? <a href="registrazione.jsp" >registrati</a></p>
@@ -39,8 +39,8 @@
                 </div>
             </div>
        
-    </form>  
+    </form>    
     
-    
+    <%@ include file="footer.jsp" %>
 </body>
 </html>

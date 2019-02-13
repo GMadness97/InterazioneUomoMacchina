@@ -13,20 +13,14 @@
 <script src="js/bootstrap.min.js"></script>
 <div>
 
-<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:black;">
-  <div class="container">
-    <a class="navbar-brand"  href="#">
-          <img src="http://placehold.it/150x50?text=Logo" alt="" style="margin: 0; float: none; text-align:center">
-        </a>
+<nav class="navbar fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"></a>
+   <div id="logo">
+        <img class="center" src="svvf"/>    
+    </div>
+  <a class="navbar-brand" href="#">Login</a>
+
    
-    
-     
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-      
-    
-  </div>
-</div>
+</nav>
 </body>
 </html>
