@@ -2,6 +2,10 @@ package model;
 
 public class Orario {
 	
+	public Orario() {
+		
+	}
+	
 	public Orario(String partenza, String arrivo, String orario, String giorno, String compagnia, String prezzo,
 			String durata) {
 		super();

@@ -10,5 +10,6 @@
 	<jsp:useBean id="orari" scope="session" class="model.ListOrari"></jsp:useBean>
 	<jsp:useBean id="rivenditori" scope="session" class="model.ListRivenditori"></jsp:useBean>
 
+
 </body>
 </html>
