@@ -30,4 +30,8 @@ public class ListOrari {
 		return lista.isEmpty();
 	}
 	
+	public int getSize() {
+		return lista.size();
+	}
+	
 }

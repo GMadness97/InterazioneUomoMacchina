@@ -2,13 +2,15 @@ package model;
 
 public class Rivenditore {
 	
+	public Rivenditore() {
+		
+	}
 	
 	public Rivenditore(String compagniaRiv, String luogoRiv) {
 		super();
 		this.compagniaRiv = compagniaRiv;
 		this.luogoRiv = luogoRiv;
 	}	
-	
 	
 	public String getCompagniaRiv() {
 		return compagniaRiv;

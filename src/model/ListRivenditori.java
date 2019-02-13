@@ -29,6 +29,9 @@ public class ListRivenditori {
 		return lista.isEmpty();
 	}
 
+	public int getSize() {
+		return lista.size();
+	}
 	private ArrayList<Rivenditore> lista;
 	
 }
