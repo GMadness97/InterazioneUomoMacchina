@@ -49,10 +49,17 @@
            
             
             <div class="col-12">
+             <div class="col-6">
               <button class="btn btn-light" type="submit" onclick="visualizza(2)" id='btn'>Precedente</button>
+              <br>
+              </div>
+               <div class="col-6 ">
               <button class="btn btn-light" type="submit" onclick="visualizza(1)">Successivo</button>
-               <button class="btn btn-light" type="submit" onclick="">Conferma</button>
-                
+               </div>
+                <div class="col-12">
+                <br>
+               <button class="btn btn-light" type="submit" onclick="" id='btn2'>Conferma</button>
+       			</div>
                  
             </div>
              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Annulla
@@ -74,11 +81,12 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      
+     
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary"  onclick=location.href="index.jsp">Annulla l'inserimento</button>
         <button type="button" class="btn btn-primary col-sm-offset-7" data-dismiss="modal">Continua inserimento</button>
       </div>
+      
     </div>
   </div>
 </div>
@@ -90,6 +98,8 @@
  //document.getElementById("modi").style.display="block";
  //document.getElementById("np").style.display="none";
  document.getElementById("btn").style.display="none";
+ document.getElementById("btn2").style.display="none";
+
  function visualizza(flag){
 
 
@@ -98,12 +108,15 @@
 		    document.getElementById("ins2").style.display="block";
 	       document.getElementById("ins").style.display="none";
 	       document.getElementById("btn").style.display="block";
+	       document.getElementById("btn2").style.display="block";
+
 	      // document.getElementById("modi").style.display="none";
 	     //  document.getElementById("np").style.display="block";
 		   break; 
 	       case(2):
 		   document.getElementById("ins").style.display="block";
 	       document.getElementById("ins2").style.display="none";
+	       document.getElementById("btn2").style.display="none";
 	       document.getElementById("btn").style.display="none";
 	    //   document.getElementById("np").style.display="block";
 	       	break;
