@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="ISO-8859-1">
@@ -9,6 +11,7 @@
 <link href="/Stile.css" rel="stylesheet" >
 </head>
 <body>
+    
 	<jsp:useBean id="aggiornamenti" class="model.ListAggiornamenti" scope="page"></jsp:useBean>
 	<jsp:useBean id="aggiornamento0" class="model.Aggiornamento" scope="page"></jsp:useBean>
 	<jsp:useBean id="aggiornamento1" class="model.Aggiornamento" scope="page"></jsp:useBean>
@@ -30,76 +33,35 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<%@ include file="header.jsp" %>
-	<%@ include file="menu.jsp" %>
+
+
 	
 	<table class="table-dark">
 	  <thead>
     	<tr>
+    	<th scope="col">Verificato</th>
       	<th scope="col">Compagnia</th>
       	<th scope="col">Avviso</th>
     	</tr>
   	  </thead>
- 	 	<tbody>
- 	 	<tr>
-  			<td>
- 	 			<p><%= aggiornamenti.getItem(0).getCompagnia() %></p>
- 	 		</td>
-			<td>
- 	 			<p><%= aggiornamenti.getItem(0).getAvviso() %></p>
- 	 		</td>
-		</tr>
-		<tr>
-  			<td>
- 	 			<p><%= aggiornamenti.getItem(1).getCompagnia() %></p>
- 	 		</td>
-			<td>
- 	 			<p><%= aggiornamenti.getItem(1).getAvviso() %></p>
- 	 		</td>
-		</tr>
- 	 	<tr>
-  			<td>
- 	 			<p><%= aggiornamenti.getItem(2).getCompagnia() %></p>
- 	 		</td>
-			<td>
- 	 			<p><%= aggiornamenti.getItem(2).getAvviso() %></p>
- 	 		</td>
-		</tr>
-		<tr>
-  			<td>
- 	 			<p></p>
- 	 		</td>
-			<td>
- 	 			<p></p>
- 	 		</td>
-		</tr>
-		<tr>
-  			<td>
- 	 			<p></p>
- 	 		</td>
-			<td>
- 	 			<p></p>
- 	 		</td>
-		</tr>
-		<tr>
-  			<td>
- 	 			<p></p>
- 	 		</td>
-			<td>
- 	 			<p></p>
- 	 		</td>
-		</tr>
-		<tr>
-  			<td>
- 	 			<p></p>
- 	 		</td>
-			<td>
- 	 			<p></p>
- 	 		</td>
-		</tr>
+ 	 	<tbody id="agg">
+ 	 		<c:forEach var = "i" items="${aggiornamenti.lista}">
+ 	 		<tr>
+ 	 			<td>
+ 	 				<p><c:out value="${i.verificato}" /></p>
+ 	 			</td>
+ 	 			<td>
+ 	 				<p><c:out value="${i.compagnia}" /></p>
+ 	 			</td>
+ 	 			<td>
+ 	 				<p><c:out value="${i.avviso}" /></p>
+ 	 			</td>
+ 	 		</tr>
+ 	 		</c:forEach>
+		
+
  	 	</tbody>
 	</table>
 	
-
 </body>
 </html>
