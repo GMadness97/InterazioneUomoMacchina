@@ -16,7 +16,7 @@
        
         <div class="row no-gutters social-container">
           <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Chi siamo</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Supporo</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Supporto</span></a></div>
           <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>FAQ</span></a></div>
        
         </div>

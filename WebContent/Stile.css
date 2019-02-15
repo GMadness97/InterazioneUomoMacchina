@@ -5,6 +5,7 @@
   z-index: 1;
 	top:0;
   left: 0;
+  margin-top: 3%;
   background-color: #343a40;
   overflow-x: hidden;
   padding:2%;
@@ -13,8 +14,8 @@
 
 .sidenav a {
   
-	margin-left:-25%;
-	margin-top:35%;
+	margin-left:-50%;
+	margin-top:15%;
   text-decoration: none;
   font-size: 15px;
   color: white;
@@ -88,6 +89,19 @@ footer a{
 #ins{
 	margin-right:0;
 }
+<!-- ricerca percorso-->
+#ricercaPercorso{
+	margin-top: 7%;
+	padding-left: 10%;
+}
+.btn-light{
+	width: 50%;
+}
+#dettagliPercorso{
+	padding-left:10%;
+	margin-top:8%;
+}
+
 <!-- inserisci percorso-->
 #map{
 	height: 550px;
