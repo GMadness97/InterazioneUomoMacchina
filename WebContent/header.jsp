@@ -11,16 +11,17 @@
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<div>
+<div class = container-fluid>
 
 <nav class="navbar fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"></a>
+  <a class="navbar-brand" href=""></a>
    <div id="logo">
-        <img class="center" src="svvf"/>    
+        <img class="center" src="img/logo.png" width="50%"/>    
     </div>
   <a class="navbar-brand" href="#">Login</a>
 
    
 </nav>
+</div>
 </body>
 </html>
