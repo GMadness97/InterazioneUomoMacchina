@@ -6,11 +6,12 @@ public class Aggiornamento {
 		
 	}
 	
-	public Aggiornamento(String compagnia, String avviso, int numAvviso) {
+	public Aggiornamento(String compagnia, String avviso, int numAvviso, boolean verificato) {
 		super();
 		this.compagnia = compagnia;
 		this.avviso = avviso;
 		this.numAvviso = numAvviso;
+		this.verificato = verificato;
 	}
 	
 	public String getCompagnia() {
@@ -31,13 +32,20 @@ public class Aggiornamento {
 	public void setNumAvviso(int numAvviso) {
 		this.numAvviso = numAvviso;
 	}
+	public boolean getVerificato() {
+		return verificato;
+	}
+	public void setVerificato(boolean verificato) {
+		this.verificato = verificato;
+	}
 	
 	@Override
 	public String toString() {
-		return "Aggiornamento [numAvviso =" + numAvviso +" compagnia=" + compagnia + ", avviso=" + avviso + "]";
+		return "Aggiornamento [numAvviso =" + numAvviso +", compagnia=" + compagnia + ", avviso=" + avviso + ", verificato=" + verificato + "]";
 	}
 
 	private String compagnia;
 	private String avviso;
 	private int numAvviso;
+	private boolean verificato;
 }

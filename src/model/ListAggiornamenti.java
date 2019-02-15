@@ -22,8 +22,15 @@ public class ListAggiornamenti {
 		return lista.get(i);
 	}
 	
+	public Aggiornamento getLastItem() {
+		return lista.get((lista.size()-1));
+	}
+	
 	public Aggiornamento deleteOrario(int i) {
 		return lista.remove(i);
+	}
+	public ArrayList<Aggiornamento> getLista(){
+		return lista;
 	}
 	
 	public boolean isEmptyLista() {
