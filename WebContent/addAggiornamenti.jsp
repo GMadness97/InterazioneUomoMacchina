@@ -9,12 +9,27 @@
 <link href="/Stile.css" rel="stylesheet" >
 </head>
 <body>
-	<jsp:useBean id="orari" scope="session" class="model.ListOrari"></jsp:useBean>
-	<jsp:useBean id="rivenditori" scope="session" class="model.ListRivenditori"></jsp:useBean>
+	<jsp:useBean id="aggiornamenti" class="model.ListAggiornamenti" scope="session"></jsp:useBean>
+	<jsp:useBean id="aggiornamento0" class="model.Aggiornamento" scope="page"></jsp:useBean>
+	<jsp:useBean id="aggiornamento1" class="model.Aggiornamento" scope="page"></jsp:useBean>
+	<jsp:useBean id="aggiornamento2" class="model.Aggiornamento" scope="page"></jsp:useBean>
+	<%  
+		aggiornamento0.setNumAvviso(0);
+		aggiornamento0.setCompagnia("Sita Sud");
+		aggiornamento0.setAvviso("Domani giorno 19/01/2019 la linea Fisciano-Napoli, non sarà garantita per difficoltà meteorologiche");
+		aggiornamenti.addItem(aggiornamento0);
+		aggiornamento1.setNumAvviso(1);
+		aggiornamento1.setCompagnia("SNAV");
+		aggiornamento1.setAvviso("Domani giorno 19/01/2019 i traghetti da e verso Napoli saranno sospesi per difficoltà meteorologiche");
+		aggiornamenti.addItem(aggiornamento1);
+		aggiornamento2.setNumAvviso(2);
+		aggiornamento2.setCompagnia("E.A.V.");
+		aggiornamento2.setAvviso("Mercoledì 20/01/2019 è indetto lo sciopero nazionale degli autotrasportatori per cui le corse dalle ...");
+		aggiornamenti.addItem(aggiornamento2);
+	%>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<%@ include file="header.jsp" %>
-	<%@ include file="menu.jsp" %>
+
 
 <table class="table-dark">
   <thead>
@@ -25,7 +40,7 @@
   <tbody>
   	<tr>
   	<td>
-  	<form action="AddRivenditore" method="POST">
+  	<form action="AddAggiornamento" method="POST">
 		<div class="form-group">
    			<input type="text" class="form-control" name="compAvv" placeholder="Compagnia Avviso" required>
   		</div>
@@ -33,7 +48,7 @@
    			<input type="text" class="form-control" name="avviso" placeholder="Avviso" required>
   		</div>
   		<div class="form-group">
-  			<input type="hidden" class="form-control" name="verificato" value="<%= %>">
+  			<input type="hidden" class="form-control" name="verificato" value="false">
   		</div>
   		<div class="form-group">
   			<button type="submit">Conferma</button>
