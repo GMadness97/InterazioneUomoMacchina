@@ -15,7 +15,7 @@
 <%@ include file="menu.jsp" %>
 <br><br>
 <br><br>
-<div class="container">
+<div class="container container-registrazione">
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
 	<h4 class="card-title mt-3 text-center">Crea un Account</h4>

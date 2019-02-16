@@ -45,8 +45,12 @@ footer a{
 #justpushtobottom {
     height: 82vh;
 }
+
+.container-registrazione{
+	margin-top:3%;
+}
 .login-container{
-    margin-top: 5%;
+    margin-top: 15%;
     margin-left:25%;
     margin-bottom: 5%;
 }
@@ -89,20 +93,18 @@ footer a{
 #ins{
 	margin-right:0;
 }
-<!-- ricerca percorso-->
-#ricercaPercorso{
-	margin-top: 7%;
-	padding-left: 10%;
-}
+/* ricerca percorso */
+
 .btn-light{
 	width: 50%;
 }
+
 #dettagliPercorso{
 	padding-left:10%;
 	margin-top:8%;
 }
 
-<!-- inserisci percorso-->
+<!-- inserisci percorso -->
 #map{
 	height: 550px;
 }

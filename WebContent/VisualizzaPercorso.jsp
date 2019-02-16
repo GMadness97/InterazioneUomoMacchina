@@ -10,7 +10,7 @@
 <body>
 <%@ include file="header.jsp" %>
 <%@ include file="menu.jsp" %>
-<div class=container-fluid id=dettagliPercorso>
+<div class=container-fluid id=dettagliPercorso class=percorso>
 
 	
 
