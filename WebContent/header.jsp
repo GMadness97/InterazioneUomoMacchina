@@ -18,7 +18,7 @@
    <div id="logo">
         <img class="center" src="img/logo.png" width="50%"/>    
     </div>
-  <a class="navbar-brand" href="#">Login</a>
+  <a class="navbar-brand" href="login.jsp">Login</a>
 
    
 </nav>
