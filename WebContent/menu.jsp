@@ -15,10 +15,11 @@
 <div class="sidenav fixed-bottom">
   <a href="index.jsp">Ricerca Percorso</a>
   <a href="ricercaBiglietto.jsp">Ricerca Biglietti</a>
-  <a href="#clients">Orari Corse</a>
+  <a href="orariCorse.jsp">Orari Corse</a>
   <a href="inserisciPercorso.jsp">Inserisci Percorso</a>
-  <a href="#contact">Inserisci info</a>
-  <a href="#contact">Aggiornamenti</a>
+  <a href="AddInfo.jsp">Inserisci info</a>
+  <a href="addAggiornamenti.jsp">Inserisci aggiornamenti</a>
+  <a href="aggiornamenti.jsp">Aggiornamenti</a>
 </div>
 
 </body>
