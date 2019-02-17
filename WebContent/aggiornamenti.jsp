@@ -28,7 +28,7 @@
  	 		<c:forEach var = "i" items="${aggiornamenti.lista}">
  	 		<tr>
  	 			<td>
- 	 				<a href="SigleAgg?param1=<c:out value='${i.numAvviso }' />"><c:out value="${i.verificato}" /></a>
+ 	 				<a href="SingleAgg?param1=<c:out value='${i.numAvviso }' />"><c:out value="${i.verificato}" /></a>
  	 			</td>
  	 			<td>
  	 				<p><c:out value="${i.compagnia}" /></p>
