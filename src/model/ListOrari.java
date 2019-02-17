@@ -22,6 +22,13 @@ public class ListOrari {
 		return lista.get(i);
 	}
 	
+	public ArrayList<Orario> getLista(){
+		return lista;
+	} 
+	public void setLista(ArrayList<Orario> lista) {
+		this.lista = lista; 
+	}
+	
 	public Orario deleteOrario(int i) {
 		return lista.remove(i);
 	}
