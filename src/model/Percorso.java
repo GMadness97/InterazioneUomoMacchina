@@ -10,7 +10,8 @@ public class Percorso {
 	private String compagnia;
 	private LocalTime oraPartenza;
 	private LocalTime durata;
-	private float valutazione;
+	private int numeroValutazioni;
+	private float sommaValutazioni;
 	
 	public Percorso(){
 		
@@ -23,7 +24,7 @@ public class Percorso {
 		this.compagnia = compagnia;
 		this.oraPartenza = oraPartenza;
 		this.durata = durata;
-		this.valutazione = valutazione;
+		this.valuta(valutazione);
 	}
 
 	public String getCreatore() {
@@ -75,11 +76,12 @@ public class Percorso {
 	}
 
 	public float getValutazione() {
-		return valutazione;
+		return sommaValutazioni/numeroValutazioni;
 	}
 
-	public void setValutazione(float valutazione) {
-		this.valutazione = valutazione;
+	public void valuta(float valutazione) {
+		this.sommaValutazioni += valutazione;
+		this.numeroValutazioni++;
 	}
 	
 }

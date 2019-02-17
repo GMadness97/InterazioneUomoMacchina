@@ -4,25 +4,25 @@ import java.util.*;
 
 public class ListPercorsi {
 
-	List<Percorso> percorsi;
+	private static List<Percorso> percorsi;
 	
-	public ListPercorsi(){
-		percorsi = new ArrayList<Percorso>();
+	static{
+		
 	}
 	
-	public ListPercorsi(ArrayList<Percorso> percorsi){
-		this.percorsi = percorsi;
+	public ListPercorsi(){
 	}
 	
 	public void doSave(Percorso percorso){
 		percorsi.add(percorso);
 	}
 	
-	public Percorso doRetrieve(String partenza, String arrivo){
+	public ArrayList<Percorso> doRetrieve(String partenza, String arrivo){
+		ArrayList<Percorso> lista = new ArrayList<Percorso>();
 		for(Percorso p : percorsi){
 			if(p.getPartenza().equalsIgnoreCase(partenza) && p.getArrivo().equalsIgnoreCase(arrivo))
-				return p;
+				lista.add(p);
 		}
-		return null;
+		return lista;
 	}
 }
