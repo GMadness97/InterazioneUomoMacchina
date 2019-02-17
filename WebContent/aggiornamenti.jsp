@@ -14,9 +14,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-
-	
+	<jsp:useBean id="aggiornamento" scope="session" class="model.Aggiornamento"></jsp:useBean>
+	<jsp:useBean id="singAgg" scope="session" class="model.Aggiornamento"></jsp:useBean>
 	<table class="table-dark">
 	  <thead>
     	<tr>
@@ -25,11 +24,11 @@
       	<th scope="col">Avviso</th>
     	</tr>
   	  </thead>
- 	 	<tbody id="agg">
+ 	 	<tbody>
  	 		<c:forEach var = "i" items="${aggiornamenti.lista}">
  	 		<tr>
  	 			<td>
- 	 				<p><c:out value="${i.verificato}" /></p>
+ 	 				<a href="SigleAgg?param1=<c:out value='${i.numAvviso }' />"><c:out value="${i.verificato}" /></a>
  	 			</td>
  	 			<td>
  	 				<p><c:out value="${i.compagnia}" /></p>
