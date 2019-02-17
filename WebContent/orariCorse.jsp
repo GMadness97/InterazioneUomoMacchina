@@ -16,6 +16,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<jsp:useBean id="orariSelect" scope="session" class="model.ListOrari"></jsp:useBean>
 	<jsp:useBean id="orarioX" scope="session" class="model.Orario"></jsp:useBean>
+	<%@ include file="header.jsp" %>
+	<%@ include file="menu.jsp" %>
 	<%
 		orarioX.setPartenza("Napoli Galileo Ferraris");
 		orarioX.setArrivo("Unisa Fisciano");
@@ -26,14 +28,15 @@
 		orarioX.setDurata("1:00");
 		orariSelect.addItem(orarioX);
 	%>
-
-	<table class="table-dark">
+	<div class="tavole">
+	<table class="table-dark" id="alf">
 		<thead>
 			<tr>
 				<th scope="col">Compagnia</th>
 				<th scope="col">Orario</th>
 				<th scope="col">Prezzo</th>
 				<th scope="col">Durata</th>
+			</tr>
 		</thead>
 		<tbody>
 			
@@ -48,10 +51,15 @@
 		</tbody>
 	</table>
 
-	<table class="table-dark">
+	<table class="table-dark" id="alf">
+	<thead>
+		<tr>
+			<th scope="col">Ricerca Orario</th>
+		</tr>
+	</thead>
 	<tbody>
 		<tr>
-			<td>
+			<td>	
 				<form action="SearchOrario" method="POST">
 					<div class="form-group">
 						<input type="text" class="form-control" name="partenzaSel"
@@ -80,5 +88,6 @@
 		</tr>
 	</tbody>
 	</table>
+	</div>
 </body>
 </html>
