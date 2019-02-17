@@ -26,7 +26,7 @@
   <tbody>
   	<tr>
   	<td>
-  	<img src="img/Iniziale.png" width="600px" height="300px">
+  	<img src="img/Iniziale.png" width="600px" height="300px" id="immagine">
 	<form action="AddRivenditore" method="POST">
 		<div class="form-group">
    			<input type="text" class="form-control" name="compagniaRiv" id="compagniaRiv" placeholder="Compagnia" required>
@@ -82,6 +82,13 @@
 	</tr>
   </tbody>
 </table>
-	
+<script>
+$("#luogoRiv").on("change keyup paste", function(){
+	setTimeout(function() {
+		$("#immagine").attr("src","img/Biglietteria.png");
+	}, 3000);
+})
+
+</script>
 </body>
 </html>
