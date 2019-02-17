@@ -62,7 +62,7 @@ public class RegistrationControl extends HttpServlet {
 					dispatcher.forward(request, response);
 				} else {	
 					utenti.doSave(newUser);
-					session.setAttribute("email", eMail);
+					session.setAttribute("isLogged", true);
 					session.setAttribute("isTrasporti", false);
 
 					System.out.println("Ciao");
