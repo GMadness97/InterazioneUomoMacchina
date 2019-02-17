@@ -39,6 +39,14 @@ public class ListUtenti {
 		return null;
 	}
 	
+	public boolean existUser(String email){
+		for(Utente u : utenti){
+			if(u.getEmail().equalsIgnoreCase(email))
+				return true;
+		}
+		return false;
+	}
+	
 	public void doDelete(String email){
 		for(Utente u : utenti){
 			if(u.getEmail().equalsIgnoreCase(email))

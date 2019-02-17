@@ -34,7 +34,12 @@ footer a{
 	       text-decoration:none;
             color: white;
      
-}        
+}     
+
+.regSucc{
+	padding-left:20%;
+	padding-top: 15%;
+}   
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -47,7 +52,7 @@ footer a{
 }
 
 .container-registrazione{
-	margin-top:3%;
+	margin-top:8%;
 }
 
 .login-container{

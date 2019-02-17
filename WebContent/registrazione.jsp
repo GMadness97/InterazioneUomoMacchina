@@ -13,8 +13,7 @@
 <script src="js/bootstrap.min.js"></script>
 <%@ include file="header.jsp" %>
 <%@ include file="menu.jsp" %>
-<br><br>
-<br><br>
+<form action="RegistrationControl" method="post" name ="registrazione">
 <div class="container container-registrazione">
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
@@ -67,8 +66,7 @@
 </div>
 
 <!--container end.//-->
-<br><br>
-<br><br>
+</form>
 <%@ include file="footer.jsp" %>
 </body>
 </html>
