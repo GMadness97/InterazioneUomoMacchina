@@ -14,21 +14,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
 <form action="LoginControl" method="post" name="login">
 <div class="container login-container"> 
             <div class="row">
-                <div class="col-md-9 col-md-offset-5 login-form-1">
+                <div class="col-md-12 login-form-1">
                     <h3>Login</h3>
                     
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email *" name ="email"   required oninput ="controlloEmail()">
+                            <input type="email" class="form-control" placeholder="Email *" name ="email"/>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password *" name ="password" required oninput ="controlloPassword()" />
+                            <input type="password" class="form-control" placeholder="Password *" name ="password"/>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btnSubmit" name="invio" value="Login" name="login" onclick="validazione()"/>
+                            <input type="submit" class="btnSubmit" name="invio" value="Login" name="login"/>
                         </div>
                     	<div class="form-group">
                        <p class="btnForgetPwd">Non hai un account? <a href="registrazione.jsp" >registrati</a></p>

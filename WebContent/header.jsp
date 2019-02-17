@@ -9,6 +9,13 @@
 <link href="style.css" rel="stylesheet" >
 </head>
 <body>
+<%
+	String name = "Login", link = "login.jsp";
+	if(session.getAttribute("isLogged") != null){
+		name = "Logout";
+		link = "LogoutControl";
+	}
+%>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <div class = container-fluid>
@@ -16,9 +23,11 @@
 <nav class="navbar fixed-top navbar-dark bg-dark">
   <a class="navbar-brand" href=""></a>
    <div id="logo">
+   	<a href = index.jsp>
         <img class="center" src="img/logo.png" width="50%"/>    
-    </div>
-  <a class="navbar-brand" href="#">Login</a>
+    </a>
+   </div>
+  <a class="navbar-brand" href= <%= link %> > <%= name %> </a>
 
    
 </nav>

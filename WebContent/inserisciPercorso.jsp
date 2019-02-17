@@ -17,9 +17,9 @@
 <div class="container mt-5" >
  <div class="row">
       <div class="col-md-6 maps" >
-         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" frameborder="0" style="border:0" allowfullscreen></iframe>
+         <img src="img/mappa2.jpg" />
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 dettagli">
         <form action="">
           <div class="row">
             <div class="col-lg-12" id='ins'>
@@ -90,6 +90,7 @@
     </div>
   </div>
 </div>
+
     <%@ include file="footer.jsp" %>
 <script > 
 
