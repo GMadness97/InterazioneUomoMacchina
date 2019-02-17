@@ -14,7 +14,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
 <form action="LoginControl" method="post" name="login">
 <div class="container login-container"> 
             <div class="row">

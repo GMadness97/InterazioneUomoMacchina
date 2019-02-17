@@ -6,17 +6,10 @@ import java.util.List;
 
 public class ListUtenti {
 
-	List<Utente> utenti;
+	private static List<Utente> utenti;
 	
-	public ListUtenti(){
+	static {
 		utenti = new ArrayList<Utente>();
-	}
-	
-	public ListUtenti(ArrayList<Utente> utenti){
-		this.utenti = utenti;
-	}
-	
-	public void caricaUtenti(){
 		utenti.add(new Utente("Mario", "Rossi", new Date(1980, 12, 12), "uno@due.it", "Password1", true));
 		utenti.add(new Utente("Marco", "Bianchi", new Date(1995, 5, 20), "due@tre.it", "Password1", false));
 		utenti.add(new Utente("Giovanni", "Verdi", new Date(1998, 3, 18), "tre@quattro.it", "Password1", false));
