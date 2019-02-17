@@ -26,8 +26,8 @@ public class AddOrario extends HttpServlet{
 		HttpSession session = request.getSession();
 		
 		Orario orario = new Orario();
-		orario.setArrivo(request.getParameter("partenza"));
-		orario.setPartenza(request.getParameter("arrivo"));
+		orario.setPartenza(request.getParameter("partenza"));
+		orario.setArrivo(request.getParameter("arrivo"));
 		orario.setOrario(request.getParameter("orario"));
 		orario.setGiorno(request.getParameter("giorno"));
 		orario.setCompagnia(request.getParameter("compagnia"));
@@ -42,7 +42,7 @@ public class AddOrario extends HttpServlet{
 				System.out.println(lista.getItem(i).toString());
 		}
 		
-		RequestDispatcher rd=  getServletContext().getRequestDispatcher("/AddInfo.jsp");
+		RequestDispatcher rd=  getServletContext().getRequestDispatcher("/orariCorse.jsp");
 		if(rd!=null) {
 			rd.forward(request, response);
 		}

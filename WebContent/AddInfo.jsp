@@ -13,8 +13,7 @@
 	<jsp:useBean id="rivenditori" scope="session" class="model.ListRivenditori"></jsp:useBean>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<%@ include file="header.jsp" %>
-	<%@ include file="menu.jsp" %>
+
 	
 <table class="table-dark">
   <thead>
