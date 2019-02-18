@@ -14,20 +14,10 @@
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<jsp:useBean id="orariSelect" scope="session" class="model.ListOrari"></jsp:useBean>
-	<jsp:useBean id="orarioX" scope="session" class="model.Orario"></jsp:useBean>
+
 	<%@ include file="header.jsp" %>
 	<%@ include file="menu.jsp" %>
-	<%
-		orarioX.setPartenza("Napoli Galileo Ferraris");
-		orarioX.setArrivo("Unisa Fisciano");
-		orarioX.setOrario("9:30");
-		orarioX.setGiorno("Lunedi");
-		orarioX.setCompagnia("Sita Sud");
-		orarioX.setPrezzo("4.50");
-		orarioX.setDurata("1:00");
-		orariSelect.addItem(orarioX);
-	%>
+
 	<div class="tavole">
 	<table class="table-dark" id="alf">
 		<thead>
@@ -39,9 +29,18 @@
 			</tr>
 		</thead>
 		<tbody>
-			
+			<c:set var ="x" scope="session" value="true"></c:set>
 			<c:forEach var="i" items="${orariSelect.lista}">
-				<tr>
+			<c:choose>
+ 	 			<c:when test="${x == true}">
+ 	 			<c:set var="x" value="false"/>
+ 	 			<tr>
+ 	 			</c:when>
+ 	 			<c:otherwise>
+ 	 			<c:set var="x" value="true"/>
+ 	 			<tr style="background-color:#808080;">
+ 	 			</c:otherwise>
+ 	 		</c:choose>
 					<td><c:out value="${i.compagnia }" /></td>
 					<td><c:out value="${i.orario }" /></td>
 					<td><c:out value="${i.prezzo }" /></td>

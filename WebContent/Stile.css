@@ -1,5 +1,9 @@
 @charset "ISO-8859-1";
 
+body{
+  background-color: #343a40;
+}
+
 .sidenav {
 
   width: 8%;
@@ -162,8 +166,6 @@ footer a{
 }
 
 .tavole{
-
-
 }
 
 
