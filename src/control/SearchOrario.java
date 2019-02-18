@@ -38,8 +38,8 @@ public class SearchOrario extends HttpServlet{
 			for(int i = 0;i<orari.getSize();i++) {
 				if(orari.getItem(i).getPartenza().contains(partenza)) {
 					if(orari.getItem(i).getArrivo().contains(arrivo)) {
-						if(orari.getItem(i).getGiorno().contains(giorno) || giorno.equals("Settimanale")) {
-							orariSel.addItem(orari.getItem(i));
+						if(orari.getItem(i).getGiorno().equals(giorno) || giorno.equals("Settimanale")) {
+							orariSel.addWithControll(orari.getItem(i));
 						}
 					}
 				}

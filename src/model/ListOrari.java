@@ -41,4 +41,16 @@ public class ListOrari {
 		return lista.size();
 	}
 	
+	public void addWithControll(Orario orario) {
+		boolean flag=false;
+		for(int i=0;i<lista.size();i++) {
+			if(lista.get(i).getPrezzo().equals(orario.getPrezzo()) && lista.get(i).getCompagnia().equals(orario.getCompagnia()) && lista.get(i).getDurata().equals(orario.getDurata())) {
+				flag=true;
+			}
+		}
+		if(flag==false) {
+			lista.add(orario);
+		}
+	}
+	
 }
