@@ -41,10 +41,10 @@
 						</div>
 						<h5 class="product-description">Da: <%= percorso.getPartenza() %></h5>
 						<h5 class="price">A: <%= percorso.getArrivo() %></h5>
-						<h5><%= percorso.getCompagnia() %></h5>
+						<h5>Compagnia: <%= percorso.getCompagnia() %></h5>
 						<h5>Alle: <%= percorso.getOraPartenza() %></h5>
-						<h5>Durata: <%= percorso.getDurata() %></h5>
-						<h5>Valutazione <%= percorso.getValutazione() %></h5>
+						<h5>Durata: <%= percorso.getDurata() %> minuti</h5>
+						<h5>Valutazione: <%= percorso.getValutazione() %></h5>
 						
 						
 						

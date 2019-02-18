@@ -1,7 +1,5 @@
 package model;
 
-import java.time.LocalTime;
-
 public class Percorso {
 
 	private static int count;
@@ -15,6 +13,7 @@ public class Percorso {
 	private String durata;
 	private int numeroValutazioni;
 	private double sommaValutazioni;
+	private String foto;
 	
 	public Percorso(){
 		id = ++count;
@@ -44,7 +43,7 @@ public class Percorso {
 		this.durata = durata;
 	}
 
-	public Percorso(String creatore, String partenza, String arrivo, String compagnia, String oraPartenza, String durata, double valutazione){
+	public Percorso(String creatore, String partenza, String arrivo, String compagnia, String oraPartenza, String durata, double valutazione, String foto){
 		this.creatore = creatore;
 		this.partenza = partenza;
 		this.arrivo = arrivo;
@@ -52,6 +51,7 @@ public class Percorso {
 		this.oraPartenza = oraPartenza;
 		this.durata = durata;
 		this.valuta(valutazione);
+		this.foto = foto;
 	}
 
 	public String getCreatore() {
@@ -93,6 +93,14 @@ public class Percorso {
 	public void valuta(double valutazione) {
 		this.sommaValutazioni += valutazione;
 		this.numeroValutazioni++;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
 	}
 	
 }

@@ -13,15 +13,11 @@
 <script src="js/bootstrap.min.js"></script>
 <%@ include file="header.jsp" %>
 <%@ include file="menu.jsp" %>
-<div class="fixed-bottom">
-<div class="container col-sm-5 ">
+<div class = ricercaBiglietto>
 <div class="row">
-<div class="align-bottom">
+<div class="container  col-md-6 ">
 <div class="input-group input-group-sm mb-3" id='ric'>
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-sm"></span>
-  </div>
-  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Inserisci la tua posizione">
+   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Inserisci la tua posizione">
 </div>
 <div class="dropdown">
   <button class="dropbtn">Tipologia biglietto</button>
@@ -61,20 +57,16 @@
   </tbody>
 </table>
 </div>
-</div>
-</div>
-
-</div>
 <br><br><br><br><br><br><br>
-<div class="fixed-right">
-<div class="row ">
 
-<div class="container  col-md-5 "></div>
-<div class="container  col-md-5 ">
 
-<div>
-<img src="img/mappa1.jpg" class="img-fluid  w-150 p-1"  alt="Responsive image">
-</div>
+
+
+<div class="container  col-md-6 ">
+
+
+<img src="img/mappa2.jpg" class="img-fluid  w-150 p-1"  alt="Responsive image">
+
 </div>
 </div>
 </div>
