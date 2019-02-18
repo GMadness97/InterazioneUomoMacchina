@@ -220,6 +220,11 @@ footer a{
   cursor: pointer;
 }
 
+.ricercaBiglietto{
+	padding-top: 8%;
+	margin-left: 12%;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
