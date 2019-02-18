@@ -20,30 +20,30 @@
          <img src="img/mappa2.jpg" />
       </div>
       <div class="col-md-6 dettagli">
-        <form action="">
+        <form action="InserisciPercorso">
           <div class="row">
             <div class="col-lg-12" id='ins'>
             <div class="col-lg-6" >
-              <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Puntdi partenza" >
+              <div class="form-group"><h5>Da:</h5>
+                <input type="text" class="form-control mt-2" name= partenza placeholder="Partenza" >
               </div>
             </div>
             <div class="col-lg-6" >
-              <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Sede di arrivo" >
+              <div class="form-group"><h5>A:</h5>
+                <input type="text" class="form-control mt-2" name=arrivo placeholder="Arrivo" >
               </div>
             </div>
             <div class="col-lg-6" >
-              <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Durata" >
+              <div class="form-group"><h5>In:</h5>
+                <input type="text" class="form-control mt-2" name=durataTotale placeholder="Durata in minuti" >
               </div>
             </div>
             </div>
             <div class="col-lg-7" id='ins2'>
               <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Fine tratta" required >
-                <input type="text" class="form-control mt-2" placeholder="Compagnia utilizzata per la tratta" >
-                <input type="text" class="form-control mt-2" placeholder="Durata tratta" >
+                <input type="text" class="form-control mt-2" name = fineTratta placeholder="Fine tratta" required >
+                <input type="text" class="form-control mt-2" name=compagnia placeholder="Compagnia per questa tratta" >
+                <input type="text" class="form-control mt-2" name=durataTratta placeholder="Durata tratta" >
               </div>
             </div>
            

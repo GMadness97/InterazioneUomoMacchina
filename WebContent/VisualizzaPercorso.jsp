@@ -10,6 +10,7 @@
 <body>
 <%@ include file="header.jsp" %>
 <%@ include file="menu.jsp" %>
+<%@ page import="java.util.*, java.text.*, model.*" %>
 <div class=container-fluid id=dettagliPercorso class=percorso>
 
 	
@@ -21,11 +22,13 @@
 						  <div class="tab-pane active" id="pic-1"><img src="img/mappa2.jpg" /></div>
 						  
 						</div>
-						
+						<%
+								Percorso percorso = (Percorso) session.getAttribute("percorso");
+						%>
 						
 					</div>
 					<div class="details col-md-6">
-						<h3 class="product-title">aaa</h3>
+						<h3 class="product-title"> </h3>
 						<div class="rating">
 							<div class="stars">
 								<span class="fa fa-star checked"></span>
@@ -36,8 +39,12 @@
 							</div>
 							
 						</div>
-						<p class="product-description">aaaa</p>
-						<h4 class="price">aaa</h4>
+						<h5 class="product-description">Da: <%= percorso.getPartenza() %></h5>
+						<h5 class="price">A: <%= percorso.getArrivo() %></h5>
+						<h5><%= percorso.getCompagnia() %></h5>
+						<h5>Alle: <%= percorso.getOraPartenza() %></h5>
+						<h5>Durata: <%= percorso.getDurata() %></h5>
+						<h5>Valutazione <%= percorso.getValutazione() %></h5>
 						
 						
 						

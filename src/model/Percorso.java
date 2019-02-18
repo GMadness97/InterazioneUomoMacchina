@@ -4,20 +4,47 @@ import java.time.LocalTime;
 
 public class Percorso {
 
+	private static int count;
+	
+	private int id;
 	private String creatore;
 	private String partenza;
 	private String arrivo;
 	private String compagnia;
-	private LocalTime oraPartenza;
-	private LocalTime durata;
+	private String oraPartenza;
+	private String durata;
 	private int numeroValutazioni;
-	private float sommaValutazioni;
+	private double sommaValutazioni;
 	
 	public Percorso(){
-		
+		id = ++count;
 	}
 	
-	public Percorso(String creatore, String partenza, String arrivo, String compagnia, LocalTime oraPartenza, LocalTime durata, float valutazione){
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCompagnia() {
+		return compagnia;
+	}
+
+	public void setCompagnia(String compagnia) {
+		this.compagnia = compagnia;
+	}
+
+	public String getDurata() {
+		return durata;
+	}
+
+	public void setDurata(String durata) {
+		this.durata = durata;
+	}
+
+	public Percorso(String creatore, String partenza, String arrivo, String compagnia, String oraPartenza, String durata, double valutazione){
 		this.creatore = creatore;
 		this.partenza = partenza;
 		this.arrivo = arrivo;
@@ -51,35 +78,19 @@ public class Percorso {
 		this.arrivo = arrivo;
 	}
 
-	public String getCompagnia() {
-		return compagnia;
-	}
-
-	public void setCompagnia(String compagnia) {
-		this.compagnia = compagnia;
-	}
-
-	public LocalTime getOraPartenza() {
+	public String getOraPartenza() {
 		return oraPartenza;
 	}
 
-	public void setOraPartenza(LocalTime oraPartenza) {
+	public void setOraPartenza(String oraPartenza) {
 		this.oraPartenza = oraPartenza;
 	}
 
-	public LocalTime getDurata() {
-		return durata;
-	}
-
-	public void setDurata(LocalTime durata) {
-		this.durata = durata;
-	}
-
-	public float getValutazione() {
+	public double getValutazione() {
 		return sommaValutazioni/numeroValutazioni;
 	}
 
-	public void valuta(float valutazione) {
+	public void valuta(double valutazione) {
 		this.sommaValutazioni += valutazione;
 		this.numeroValutazioni++;
 	}
