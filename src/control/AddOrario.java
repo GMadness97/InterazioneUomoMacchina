@@ -33,10 +33,13 @@ public class AddOrario extends HttpServlet{
 		orario.setCompagnia(request.getParameter("compagnia"));
 		orario.setPrezzo(request.getParameter("prezzo"));
 		orario.setDurata(request.getParameter("durata"));
+		ListOrari orariSel = (ListOrari)session.getAttribute("orariSelect");
 		
 		if(session!=null) {
 			ListOrari lista = (ListOrari) session.getAttribute("orari");
 			lista.addItem(orario);
+			orariSel.addItem(orario);
+			request.getSession().setAttribute("orariSelect", orariSel);
 			request.getSession().setAttribute("orario", lista);
 			for(int i = 0; i<lista.getSize();i++)
 				System.out.println(lista.getItem(i).toString());
