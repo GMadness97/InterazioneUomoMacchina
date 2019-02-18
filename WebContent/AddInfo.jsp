@@ -9,8 +9,7 @@
 <link href="/Stile.css" rel="stylesheet" >
 </head>
 <body>
-	<jsp:useBean id="orari" scope="session" class="model.ListOrari"></jsp:useBean>
-	<jsp:useBean id="rivenditori" scope="session" class="model.ListRivenditori"></jsp:useBean>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<%@ include file="header.jsp" %>

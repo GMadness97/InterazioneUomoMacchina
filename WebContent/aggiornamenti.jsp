@@ -14,8 +14,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<jsp:useBean id="aggiornamento" scope="session" class="model.Aggiornamento"></jsp:useBean>
-	<jsp:useBean id="singAgg" scope="session" class="model.Aggiornamento"></jsp:useBean>
+
 	<%@ include file="header.jsp" %>
 	<%@ include file="menu.jsp" %>
 	<table class="table-dark">
@@ -27,8 +26,18 @@
     	</tr>
   	  </thead>
  	 	<tbody>
+ 	 		<c:set var ="x" scope="session" value="true"></c:set>
  	 		<c:forEach var = "i" items="${aggiornamenti.lista}">
- 	 		<tr>
+ 	 		<c:choose>
+ 	 			<c:when test="${x == true}">
+ 	 			<c:set var="x" value="false"/>
+ 	 			<tr>
+ 	 			</c:when>
+ 	 			<c:otherwise>
+ 	 			<c:set var="x" value="true"/>
+ 	 			<tr style="background-color:#808080;">
+ 	 			</c:otherwise>
+ 	 		</c:choose>
  	 			<td>
  	 				<c:choose>
  	 					<c:when test="${i.verificato==true}">

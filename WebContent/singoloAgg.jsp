@@ -20,7 +20,14 @@
 			<tr>
 			<td>
 				<p><c:out value="${aggSingl.compagnia}" /><p>
-					<c:out value="${aggSingl.verificato }"/>
+					<c:choose>
+ 	 					<c:when test="${i.verificato==true}">
+ 	 						<img src="img/true.png" width="30px" height="30px"> 
+ 	 					</c:when>
+ 	 					<c:otherwise>
+ 	 						<img src="img/false.png" width="30px" height="30px"> 
+ 	 					</c:otherwise>
+ 	 				</c:choose>
 				</p>
 				
 			</td>

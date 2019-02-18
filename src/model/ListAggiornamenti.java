@@ -40,4 +40,16 @@ public class ListAggiornamenti {
 	public int getSize() {
 		return lista.size();
 	}
+	
+	public void addWithControll(Aggiornamento aggiornamento) {
+		boolean flag=false;
+		for(int i=0;i<lista.size();i++) {
+			if(lista.get(i).getCompagnia().equals(aggiornamento.getCompagnia()) && lista.get(i).getAvviso().equals(aggiornamento.getAvviso()) && (lista.get(i).getNumAvviso() == aggiornamento.getNumAvviso())) {
+				flag=true;
+			}
+		}
+		if(flag==false) {
+			lista.add(aggiornamento);
+		}
+	}
 }
