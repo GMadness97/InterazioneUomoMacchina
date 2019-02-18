@@ -15,7 +15,7 @@
 	<%@ include file="header.jsp" %>
 	<%@ include file="menu.jsp" %>	
 	
-	<h1> Non ti è possibile accedere a tale funzionalità, effettua il <a href="login.jsp">Login</a> per poterne usufruire</h1>
+	<h2 style="color:white; margin-top:10%; margin-left:10%;"> Non ti è possibile accedere a tale funzionalità, effettua il <a href="login.jsp">Login</a> per poterne usufruire</h2>
 	
 	
 </body>
