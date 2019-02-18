@@ -9,7 +9,7 @@
 <link href="Stile.css" rel="stylesheet" >
 <%
 if(session.getAttribute("isLogged") == null){
-	response.sendRedirect("login.jsp");
+	response.sendRedirect("NonLoggato.jsp");
 }else{
 	boolean isLogged = Boolean.parseBoolean((String)session.getAttribute("isLogged"));
 	if(!isLogged){
