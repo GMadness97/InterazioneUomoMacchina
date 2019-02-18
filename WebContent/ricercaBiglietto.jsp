@@ -17,7 +17,7 @@
 <div class="row">
 <div class="container  col-md-6 ">
 <div class="input-group input-group-sm mb-3" id='ric'>
-   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Inserisci la tua posizione">
+   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name=posizione placeholder="Inserisci la tua posizione">
 </div>
 <div class="dropdown">
   <button class="dropbtn">Tipologia biglietto</button>

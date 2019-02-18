@@ -7,6 +7,16 @@
 <title>Inserisci Info</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" >
 <link href="/Stile.css" rel="stylesheet" >
+<%
+if(session.getAttribute("isLogged") == null){
+	response.sendRedirect("login.jsp");
+}else{
+	boolean isLogged = (boolean) session.getAttribute("isLogged");
+	if(!isLogged){
+		response.sendRedirect("login.jsp");
+	}
+}
+%>
 </head>
 <body>
 	<jsp:useBean id="orari" scope="session" class="model.ListOrari"></jsp:useBean>

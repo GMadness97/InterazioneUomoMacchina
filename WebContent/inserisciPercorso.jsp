@@ -7,6 +7,16 @@
 <title>Insert title here</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" >
 <link href="Stile.css" rel="stylesheet" >
+<%
+if(session.getAttribute("isLogged") == null){
+	response.sendRedirect("login.jsp");
+}else{
+	boolean isLogged = (boolean) session.getAttribute("isLogged");
+	if(!isLogged){
+		response.sendRedirect("login.jsp");
+	}
+}
+%>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -34,16 +44,16 @@
               </div>
             </div>
             <div class="col-lg-6" >
-              <div class="form-group"><h5>In:</h5>
-                <input type="text" class="form-control mt-2" name=durataTotale placeholder="Durata in minuti" >
+              <div class="form-group"><h5>Alle:</h5>
+                <input type="text" class="form-control mt-2" name=oraPartenza placeholder="Orario di partenza" >
               </div>
             </div>
             </div>
             <div class="col-lg-7" id='ins2'>
               <div class="form-group">
-                <input type="text" class="form-control mt-2" name = fineTratta placeholder="Fine tratta" required >
-                <input type="text" class="form-control mt-2" name=compagnia placeholder="Compagnia per questa tratta" >
-                <input type="text" class="form-control mt-2" name=durataTratta placeholder="Durata tratta" >
+            <input type="text" class="form-control mt-2" name = fineTratta placeholder="Fine tratta" required > 
+                <input type="text" class="form-control mt-2" name=compagnia placeholder="Compagnia" >
+                <input type="text" class="form-control mt-2" name=durata placeholder="Durata" >
               </div>
             </div>
            

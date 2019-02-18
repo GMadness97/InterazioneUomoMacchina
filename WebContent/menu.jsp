@@ -14,7 +14,7 @@
 
 <div class="sidenav fixed-bottom">
   <a href="index.jsp">Ricerca Percorso</a>
-  <a href="ricercaBiglietto.jsp">Ricerca Biglietti</a>
+  <a href="ricercaBiglietto.jsp">Ricerca Rivenditori</a>
   <a href="orariCorse.jsp">Orari Corse</a>
   <a href="inserisciPercorso.jsp">Inserisci Percorso</a>
   <a href="AddInfo.jsp">Inserisci info</a>
