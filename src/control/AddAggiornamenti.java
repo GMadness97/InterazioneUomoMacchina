@@ -37,13 +37,16 @@ public class AddAggiornamenti extends HttpServlet{
 				agg.setNumAvviso(0);
 			}
 			
+
 			agg.setCompagnia(request.getParameter("compAvv"));
 			agg.setAvviso(request.getParameter("avviso"));
 			agg.setVerificato(Boolean.parseBoolean(request.getParameter("verificato")));
 			
 			aggiornamenti.addItem(agg);
+			aggiornamenti.getLastItem().setVerificato((Boolean)session.getAttribute("isTrasporti"));
+
 			request.getSession().setAttribute("aggiornamenti", aggiornamenti);
-			
+
 		}
 		else {
 			dispatches = "/index.jsp";

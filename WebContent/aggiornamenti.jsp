@@ -40,7 +40,7 @@
  	 		</c:choose>
  	 			<td>
  	 				<c:choose>
- 	 					<c:when test="${i.verificato==true}">
+ 	 					<c:when test="${i.verificato == true}">
  	 						<img src="img/true.png" width="30px" height="30px"> 
  	 					</c:when>
  	 					<c:otherwise>

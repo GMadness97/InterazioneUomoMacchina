@@ -11,7 +11,7 @@
 if(session.getAttribute("isLogged") == null){
 	response.sendRedirect("NonLoggato.jsp");
 }else{
-	boolean isLogged = Boolean.parseBoolean((String)session.getAttribute("isLogged"));
+	boolean isLogged = (Boolean)session.getAttribute("isLogged");
 	if(!isLogged){
 		response.sendRedirect("NonLoggato.jsp");
 	}

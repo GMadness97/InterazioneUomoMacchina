@@ -32,13 +32,15 @@ public class Aggiornamento {
 	public void setNumAvviso(int numAvviso) {
 		this.numAvviso = numAvviso;
 	}
-	public boolean getVerificato() {
+
+	public boolean isVerificato() {
 		return verificato;
 	}
+
 	public void setVerificato(boolean verificato) {
 		this.verificato = verificato;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Aggiornamento [numAvviso =" + numAvviso +", compagnia=" + compagnia + ", avviso=" + avviso + ", verificato=" + verificato + "]";

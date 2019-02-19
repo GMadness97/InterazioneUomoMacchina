@@ -63,7 +63,11 @@ public class RegistrationControl extends HttpServlet {
 				} else {	
 					utenti.doSave(newUser);
 					session.setAttribute("isLogged", true);
-					session.setAttribute("isTrasporti", false);
+					if(eMail.equals("sitaTrasporti@gmail.com")) {
+						session.setAttribute("isTrasporti",  true);	
+					}
+					else
+						session.setAttribute("isTrasporti",  false);	
 
 					System.out.println("Ciao");
 					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/registrationSuccess.jsp");

@@ -41,16 +41,15 @@ public class LoginControl extends HttpServlet {
 		ListUtenti utenti = new ListUtenti();
 		if(utenti.validate(email, password) != null){
 			isTrasporti = utenti.doRetrieve(email).isGestoreTrasporti();
+			if(email.equals("sitaTrasporti@gmail.com")) {
+				isTrasporti = true;
+			}
 			request.getSession().setAttribute("isTrasporti", isTrasporti);
 			request.getSession().setAttribute("isLogged", true);
 	        
-			if(isTrasporti){
-				RequestDispatcher rd=request.getRequestDispatcher(".jsp");	//gestore trasporti
-			    rd.forward(request,response);
-			} else {
-				RequestDispatcher rd=request.getRequestDispatcher("index.jsp");  
-			    rd.forward(request,response);
-			}
+			RequestDispatcher rd=request.getRequestDispatcher("index.jsp");  
+			rd.forward(request,response);
+
 		} else {
 			out.print("<p style=\"color:red\">Spiacente E-Mail o password invalidi, riprova</p><br>");  
 			out.print("<p style=\"color:blue\">Nuovo utente? <a href=\"registrazione.jsp\">Registrati subito!</a> </br></p>");
