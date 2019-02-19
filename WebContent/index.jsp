@@ -49,13 +49,13 @@
 <div class=container-fluid id = dettagliPercorso>
 <form action=RicercaPercorso>
   <div class="row">
-  	<div class=col style="margin-right: -20%;">
+  	<div class=col style="margin-right: -20%; color: white;">
   		<h5>Da:</h5>
   	</div>
     <div class="col">
       <input type="text" class="form-control" name=partenza value="La tua posizione">
     </div>
-    <div class=col style="margin-right: -20%;">
+    <div class=col style="margin-right: -20%; color: white;">
   		<h5>A:</h5>
   	</div>
     <div class="col">
