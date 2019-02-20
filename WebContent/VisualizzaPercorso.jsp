@@ -55,7 +55,7 @@
 					<div class="preview col-md-6">
 						<h1><%= percorso.getCreatore() %></h1>
 						<div class="preview-pic tab-content">
-						  <div class="tab-pane active" id="pic-1"><img src="img/mappa2.jpg" /></div>
+						  <div class="tab-pane active" id="pic-1"><img src="<%= percorso.getFoto() %>" width=650 alt="Mappa non disponibile"/></div>
 						  
 						</div>
 					</div>
