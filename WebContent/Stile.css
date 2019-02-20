@@ -127,6 +127,7 @@ footer a{
 	margin-top:8%;
 }
 
+
 /* inserisci percorso */
 
 .inserisciPercorso{
@@ -152,17 +153,15 @@ footer a{
   text-decoration: none;
 }
 
-.table-dark{
-	margin-left:10%;
-	margin-top:10%;
-	width: 90%;
-	height: 90%;
-	padding: 10px;
-	float : left;
-}
+
 
 #alf{
 	width: 40%;
+	margin-left:10%;
+	margin-top:10%;
+	height: 90%;
+	padding: 10px;
+	float : left;
 }
 
 .tavole{

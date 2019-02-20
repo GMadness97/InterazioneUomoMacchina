@@ -46,6 +46,7 @@ public class LoginControl extends HttpServlet {
 			}
 			request.getSession().setAttribute("isTrasporti", isTrasporti);
 			request.getSession().setAttribute("isLogged", true);
+			request.getSession().setAttribute("email", email);
 	        
 			RequestDispatcher rd=request.getRequestDispatcher("index.jsp");  
 			rd.forward(request,response);

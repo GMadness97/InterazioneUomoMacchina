@@ -16,7 +16,7 @@ public class Percorso {
 	private String foto;
 	
 	public Percorso(){
-		id = ++count;
+		id = count++;
 	}
 	
 	public int getId() {
@@ -52,6 +52,7 @@ public class Percorso {
 		this.durata = durata;
 		this.valuta(valutazione);
 		this.foto = foto;
+		id = count++;
 	}
 
 	public String getCreatore() {

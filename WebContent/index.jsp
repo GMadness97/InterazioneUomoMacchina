@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>UniRoad</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" >
-<link href="Stile.css" rel="stylesheet" >
+<link href="InterazioneUomoMacchina/WebContent/Stile.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
 	<jsp:useBean id="orari" scope="session" class="model.ListOrari"></jsp:useBean>

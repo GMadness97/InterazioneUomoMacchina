@@ -19,6 +19,8 @@ public class InserisciPercorso extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	
+	ListUtenti utenti = new ListUtenti();
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		
 		response.setContentType("text/html");  
@@ -29,6 +31,7 @@ public class InserisciPercorso extends HttpServlet {
 		String fineTratta = request.getParameter("fineTratta");
 		String compagnia = request.getParameter("compagnia");
 		String durata = request.getParameter("durata");
+		String email = (String) request.getSession().getAttribute("email");
 		
 		Percorso percorso = new Percorso();
 		percorso.setPartenza(partenza);
@@ -36,6 +39,7 @@ public class InserisciPercorso extends HttpServlet {
 		percorso.setOraPartenza(oraPartenza);
 		percorso.setCompagnia(compagnia);
 		percorso.setDurata(durata);
+		percorso.setCreatore(utenti.doRetrieve(email).getNome() + " " + utenti.doRetrieve(email).getCognome());
 		
 		System.out.println(partenza + arrivo);
 		

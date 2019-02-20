@@ -8,7 +8,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" >
 <link href="Stile.css" rel="stylesheet" >
 </head>
-<body>
+<body style="color:white;">
 <%@ include file="header.jsp" %>
 <%@ include file="menu.jsp" %>
 <%@ page import="java.util.*, java.text.*, model.*" %>
@@ -50,10 +50,11 @@
 </form>
   	<%
   		ArrayList<Percorso> percorsi = (ArrayList<Percorso>) session.getAttribute("trovati");
+  		DecimalFormat formatter1 = new DecimalFormat("#0.0");
   		if(!percorsi.isEmpty()){
   	%>
-<table class="table table-striped">
-  <thead class=thead-dark>
+<table class="table table-striped table-dark">
+  <thead>
     <tr>
       <th scope="col">Nome percorso</th>
       <th scope="col">Creato da</th>
@@ -63,12 +64,12 @@
   <tbody>
   <%
   		for(Percorso p : percorsi){
-  			
+  			System.out.println(p.getId());
   %>
     <tr>
       <th scope="row"><a href = "VisualizzaPercorso?id=<%= p.getId() %>"><%= p.getPartenza() + " - " + p.getArrivo() %></a></th>
       <td><%= p.getCreatore() %></td>
-      <td><%= p.getValutazione() %></td>
+      <td><%= formatter1.format(p.getValutazione()) %></td>
     </tr>
     <% } %>
   </tbody>

@@ -27,36 +27,28 @@
   </div>
 </div>
 <br><br><br>
-<!-- <table class="table table-striped table-dark">
+<table class="table table-striped table-dark">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Posizione</th>
+      <th scope="col">Distanza</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">via Ferraris Galileo</th>
+      <td>200m</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row">Metropark Napoli Centrale</th>
+      <td>350m</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <th scope="row">Stazione Centrale</th>
+      <td>450m</td>
     </tr>
   </tbody>
-</table> -->
+</table>
 </div>
 <br><br><br><br><br><br><br>
 
@@ -66,7 +58,7 @@
 <div class="container  col-md-6 ">
 
 
-<img src="img/Iniziale.png" class="img-fluid  w-150 p-1"  alt="Responsive image">
+<img src="img/BiglietterieVarie.png" class="img-fluid  w-150 p-1"  alt="Responsive image">
 
 </div>
 </div>

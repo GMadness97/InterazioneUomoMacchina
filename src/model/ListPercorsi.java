@@ -9,8 +9,8 @@ public class ListPercorsi {
 	
 	static{
 		percorsi = new ArrayList<Percorso>();
-		percorsi.add(new Percorso("Mario Rossi", "La tua posizione", "Lancusi", "cstp", "10:30", "15", 3.8, null));
-		percorsi.add(new Percorso("Marco Verdi", "La tua posizione", "Lancusi", "cstp", "10:30", "25", 3.5, null));
+		percorsi.add(new Percorso("Mario Rossi", "La tua posizione", "Lancusi", "CSTP", "10:30", "15", 3.8, null));
+		percorsi.add(new Percorso("Marco Verdi", "La tua posizione", "Lancusi", "SITA", "10:30", "25", 3.5, null));
 	}
 	
 	public ListPercorsi(){
